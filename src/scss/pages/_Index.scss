@@ -1,6 +1,6 @@
 .info-block {
-	padding: 35px 0px 35px 0;
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("./img/3.jpg") no-repeat center / cover;
+	padding: 35px 0 35px 0;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("./img/8.png") no-repeat center / cover;
 	color: #FFFFFF;
 
 	&__title {
@@ -16,8 +16,8 @@
 }
 .contacts {
 	padding: 33px 0 33px 0;
-	background: rgb(255, 217, 0);
-	color: rgb(0, 0, 0);
+	background: #23374F;;
+	color: #FFFFFF;;
 	text-align: center;
 
 	&__title{	
@@ -30,7 +30,7 @@
 		font-size: 48px;
 		line-height: 72px;
 		margin-bottom: 22px;
-		color: rgb(0, 0, 0);
+		color: #FFFFFF;
 	}
 	&__link_margin-botom:hover {
 		color: green;
@@ -39,7 +39,7 @@
 	&__link {
 		font-size: 48px;
 		line-height: 72px;
-		color: rgb(0, 0, 0);
+		color:#FFFFFF;
 	}
 	&__link:hover {
 		color: green;
