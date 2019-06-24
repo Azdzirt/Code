@@ -4,8 +4,9 @@
 	box-sizing: border-box;
 	padding: 18px 0 17px 0;
 	text-align: right;
-}
-.footer__copyright-text {
-	font-size: 48px;
-	line-height: 72px;
+
+	&__copyright-text {
+		font-size: 48px;
+		line-height: 72px;
+	}
 }
