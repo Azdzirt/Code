@@ -1,34 +1,35 @@
 .header {
 	background: #FFFFFF;
 	box-sizing: border-box;
-}  
-.header_nav {
-	font-size: 36px;
-	line-height: 54px;
-	margin: 21px 0 35px 0;
-}
-.header_logo__img {
-	box-shadow: 5px 5px 10px rgb(255, 251, 0);
-	height: 79px;
-	margin: 35px 0 0 0;
-} 
-.header__link_italic {
-	font-style: italic;
-	width: 100%;
-	color: black;
-	margin-right: 19px;
-}
-.header__link_italic:hover {
-	color: green;
-	cursor: pointer;
-}
-.header__links {
-  margin-right: 23px;
-	color: black;
-	width: 100%;
-	font-style: bold;
-}
-.header__links:hover {
-	color: green;
-	cursor: pointer;
+  
+	&__nav {
+		font-size: 36px;
+		line-height: 54px;
+		margin: 21px 0 35px 0;
+	}
+	&__logo__img {
+		box-shadow: 5px 5px 10px rgb(255, 251, 0);
+		height: 79px;
+		margin: 35px 0 0 0;
+	} 
+	&__link_italic {
+		font-style: italic;
+		width: 100%;
+		color: black;
+		margin-right: 19px;
+	}	
+	&__link_italic:hover {
+		color: green;
+		cursor: pointer;
+	}
+	&__links {
+	  margin-right: 23px;
+		color: black;
+		width: 100%;
+		font-style: bold;
+	}
+		&__links:hover {
+		color: green;
+		cursor: pointer;
+ 	}
 }
