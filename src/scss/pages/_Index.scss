@@ -1,4 +1,3 @@
-
 .info-block {
 	padding: 35px 0 35px 0;
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("./img/8.png") no-repeat center / cover;
@@ -9,6 +8,7 @@
 		line-height: 72px;
 		font-weight: bold;
 	}
+	
 	&__text_margin-top {
  	  margin-top: 22px;
 		font-size: 48px;
@@ -27,24 +27,28 @@
 		line-height: 72px;
 		font-weight: bold;
 	}
+	
 	&__link_margin-botom {
 		font-size: 48px;
 		line-height: 72px;
 		margin-bottom: 22px;
 		color: #FFFFFF;
 	}
+	
 	&__link_margin-botom:hover {
-		color: green;
-		cursor: pointer;
+		color: #FF6969;
+		cursor:  url("./img/mouse.png"),progress; 
 	}
+	
 	&__link {
 		font-size: 48px;
 		line-height: 72px;
 		color:#FFFFFF;
 	}
+	
 	&__link:hover {
-		color: green;
-		cursor: pointer;
+		color: #FF6969;
+		cursor:  url("./img/mouse.png"),progress; 
 	}
 }
 
