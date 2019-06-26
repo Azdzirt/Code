@@ -1,10 +1,33 @@
 .flex{
-    display:inline-flex ;  
-    flex-direction: column-reverse;
+    display: flex;  
+    flex-wrap: nowrap; 
+    max-width: 1180px;
+    font-style: italic; 
+    padding: 0 25px;
+    background: yellowgreen;
+		flex-direction: row;
+		margin: 0 auto;
 }
-.item_one{
-    background: orangered;
-    min-height: 333px;
-    font-size: 50px;
-    color: #FFFFFF;
+.item-one{
+    color: black;
+		font-style: bold;
+		font-size: 36px;
+		line-height: 54px;
+     margin-right: 19px;
+}
+.flex-two{
+    display: flex;
+    color: black;
+    font-size: 36px;
+    line-height: 54px;
+}
+.item-two{
+    margin-right: 23px;   
+    display: table-cell;
+}
+.item-thre{
+    margin-right: 23px;
+}
+.item-four{
+
 }
