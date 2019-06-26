@@ -1,9 +1,8 @@
-#flex{
-    display:flex ;  
+.flex{
+    display:inline-flex ;  
     flex-direction: column-reverse;
-    justify-content:center;
 }
-.flex-item_one{
+.item_one{
     background: orangered;
     min-height: 333px;
     font-size: 50px;

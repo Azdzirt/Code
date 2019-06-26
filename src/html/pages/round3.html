@@ -2,21 +2,26 @@
 	<head>
 	  <meta charset="UTF-8">
 		  <link href="main.css" rel="stylesheet">
-      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
 			<link rel="shortcut icon" href="./img/7.png"> 
 			<title>Student DL</title>
 	</head>
 	<body>
-  
-    
-    
+    @@include('./../components/header.html')
+    <div class="main-block">
+      <div class="container"></div>
           <div class="flex">
-              <div class="flex-item_one">item1</div>
+              <div class="item">item1</div>
               <div class="item">item2</div>
               <div class="item">item3</div>
             </div>
-       
+        <div class="parallax-card__wrapper-img">
+          <img class="parallax-card__img" src="./img/10.png" alt="Стоит...любуется)"></img>
+        </div> 
+      </div>
+    </div>
+    @@include('./../components/footer.html')
   </body>
-
+  <script src="script.js"></script>
 </html>
