@@ -1,0 +1,11 @@
+.fixed{
+    @extend %flex;
+    position: fixed;
+    right: 7.41%;
+    bottom: 5.63%;
+    background: #FF6969;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.45);
+    border-radius: 50px;	
+    width: 100px;
+    height: 100px;
+}

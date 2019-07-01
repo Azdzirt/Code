@@ -1,50 +1,116 @@
 .info-block {
-	padding: 35px 0 35px 0;
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("./img/8.png") no-repeat center / cover;
+	padding: 50px 0 70px 0;
+	background: linear-gradient(to top, rgba(0, 0, 0,0.7), rgba(0, 0, 0, 0.7) ), url("./img/фон.png") no-repeat center / cover;
 	color: #FFFFFF;
+	margin: 0 auto;
 	
-	&__title {
-		font-size: 48px;
-		line-height: 72px;
+	&__content {
+		@include font-line(55px,75px);
+		margin-bottom: 40px;
 		font-weight: bold;
 	}
+
+	&_flex {
+		display: flex;
+		justify-content: space-between;
 	
-	&__text_margin-top {
- 	  margin-top: 22px;
-		font-size: 48px;
-		line-height: 72px;
-		margin: 22 0 0 0;
 	}
-}
+
+	&__img {
+		width: 280px;
+		height: 265px;
+	}
+	
+	&__text {
+		margin-left: 20px;
+	}
+	 
+	&__text-info {
+   		@include font-line(20px,27px);
+    	margin-bottom: 57px;
+    }
+	
+  	&__link {
+    	@extend %flex;
+    	@include font-line(24px,24px);	
+    	width: 127px;
+    	height: 44px;
+    	background: #FFE01B;
+		color:black;
+		font-family: 'Bebas Neue', arial;
+ 	 }
+	 
+	  &__link:hover{
+		text-decoration: none;
+	}
+}		
+	
+.my-block {
+	background: #F2F2F2;
+	padding: 54px 0 55px 0;
+	margin: 0 auto;
+
+ 	&__text {
+		display: flex;
+		justify-content: center;
+		font-weight: bold;
+		margin-bottom: 40px;
+		@include font-line(55px,75px);
+	}
+
+	&__img {
+
+	 	max-width: 380px;
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	
+	&__wrap {
+		margin: 0 20px 30px 0;
+		
+ 
+	}
+	 
+	&__nav {
+  		@extend %flex;
+ 		@include font-line(24px,24px);
+   		margin: 0 auto;
+   		margin-top:30px;
+   		width: 278px;
+   		height: 44px;
+		   background: #FFE01B;
+		color: black;
+		font-family: 'Bebas Neue', arial;
+	}
+	 
+	&__nav:hover{
+		text-decoration: none;
+	}	
+}	
+
 .contacts {
-	padding: 33px 0 33px 0;
-	background: #23374F;;
-	color: #FFFFFF;;
-	text-align: center;
+	padding: 33px 0 54px 0;
+	background: #FFE01B;
 
 	&__title{	
-		margin-bottom: 22px;
-		font-size: 48px;
-		line-height: 72px;
+		@extend %flex;
+		@include font-line(55px,75px);
 		font-weight: bold;
+		margin-bottom: 30px;
 	}
-	
-	&__link_margin-botom {
-		font-size: 48px;
-		line-height: 72px;
-		margin-bottom: 22px;
-		color: #FFFFFF;
-	}
-	
-	&__link_margin-botom:hover {
-		color: #FF6969;
-		cursor:  url("./img/mouse.png"),progress; 
+		
+	&__block{
+		display: flex;
+		justify-content: space-between;
 	}
 	
 	&__link {
-		font-size: 48px;
-		line-height: 72px;
-		color:#FFFFFF;
+		@extend %flex;
+		width: 280px;
+		height: 171px;
+		background: #343434;
+		margin-right: 20px;
 	}
 	
 	&__link:hover {
@@ -52,4 +118,3 @@
 		cursor:  url("./img/mouse.png"),progress; 
 	}
 }
-

@@ -1,10 +1,24 @@
+%flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin font-line($font,$line) {
+	font-size: $font;
+	line-height: $line;
+}
+
 body {
 	font-family: 'Open Sans Condensed', sans-serif
 	!important;
+	font-family: 'Bebas Neue', arial;
+	
 } 
+
 .container {
 	margin: 0 auto;
-	max-width: 1180px;
-	padding: 0 25px;
+	max-width: 1220px;
+	padding: 0 20px;
 	box-sizing: border-box;
 }

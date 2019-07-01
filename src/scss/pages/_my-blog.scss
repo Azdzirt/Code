@@ -1,51 +1,13 @@
-.my-blog {
-  background: #FFE01B;
-  padding: 50px 0 50px 0;
-  box-sizing: border-box;
-
-  &__title-one {
-  	font-size: 48px;
-    line-height: 72px;
-    font-weight: bold;
-    margin-bottom: 70px;
-  }
+.my-blog{
+  background:  #F2F2F2;
+  padding: 49px 0 54px 0;
   
-  &__title-two {
-	  font-size: 36px;
-    line-height: 54px;
-    margin: 0;
+  &__img{
+    display: flex;
   }
-  
-  &__img-one {
-    margin: 40px 0 23px 0;
-    width: 655px;
-    height: 421px;
-  }
-  
-  &__content-text_margin {
-    line-height: 27px;
-    font-size: 18px;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-  
-  &__content-text{
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  hr {
-  border: 1px solid #000000;
-  transform: rotate(0.14deg);
-  margin: 53px 0 47px 0;
-  }
-
-  &__img-two{
-    margin: 40px 0 35px 0;
-    width: 655px;
-    height: 409px;
-  }
-
+.my-block__item{
+  margin: 0 20 30 0;
+  display: flex;
+  flex-wrap: wrap;
+}
 }

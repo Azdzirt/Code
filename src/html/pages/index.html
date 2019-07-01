@@ -4,49 +4,85 @@
 		  <link href="main.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
-			<link rel="shortcut icon" href="./img/7.png"> 
+      <link href="http://allfont.ru/allfont.css?fonts=bebas-neue" rel="stylesheet" type="text/css">
+
+      <link rel="shortcut icon" href="./img/7.png"> 
 			<title>Student DL</title>
 	</head>
 	<body>
-		@@include('./../components/header.html')
+   
+    @@include('./../components/header.html')
+
+    @@include('./../components/fix.html')
+   
     <div class="info-block">
       <div class="container">
         <div class="info-block__content">
           <h class="info-block__title">
-            КРАТКАЯ ИНФОРМАЦИЯ ОБО МНЕ</h>
-          <p class="info-block__text_margin-top">
-            Я живу среди космоса. Каждый мой день - это невероятное приключение. Я есьм - Я. 
+             ОБО МНЕ
+          </h>
         </div>
+        <div class="info-block_flex">
+          <img class="info-block__img" src="./img/фото.png"></img> 
+          <div class="info-block__text">
+            <div class="info-block__text-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio quasi culpa eveniet assumenda quia qui molestiae est ea odio quos voluptatibus perspiciatis, ipsam impedit tempore ducimus omnis deserunt adipisci inventore dicta consectetur, reiciendis fugiat ad! Eum excepturi accusantium amet odio corporis? Odio dignissimos repudiandae vero sapiente voluptatum laboriosam fuga quidem quos, nostrum voluptate, qui recusandae commodi. Aliquid tenetur repellat velit assumenda sapiente aspernatur ratione, error labore pariatur cum architecto debitis odio mollitia unde officiis distinctio quia quam, voluptas quidem quasi dolorum, repudiandae obcaecati. Veniam voluptatibus dolorum iste molestiae repellat officiis quibusdam recusandae sequi cupiditate, sit corrupti! Illo, esse quibusdam? 
+            </div>   
+            <a href="./round3.html" class="info-block__link"> 
+              Подробнее
+            
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="my-block">
+      <div class="container">
+        <div class="my-block__text">
+          МОЙ БЛОГ
+        </div>
+        <div class="my-block__img">
+          <div class="my-block__wrap">
+          @@include('./../components/news.html')
+          </div>
+          <div class="my-block__wrap">
+          @@include('./../components/news.html')
+          </div>
+          <div class="my-block__wrap-two">
+          @@include('./../components/news.html')
+        </div>
+        </div>
+        <a href="./my-blog.html" class="my-block__nav">
+           Посмотреть все новости
+         </a>
       </div>
     </div>
     <div class="contacts">
       <div class="container">
         <div class="contacts__content">
-          <h1 class="contacts__title title_margin-bottom">
+          <h class="contacts__title">
             КОНТАКТЫ
-          </h1>
-          <div>
-            <a class="contacts__link_margin-botom"
-              href="https://vk.com/az0_0az" target="blank">
-                Вк			
+          </h>
+          <div class="contacts__block">
+            <a class="contacts__link"  
+              href="https://vk.com/"><img src="img/vk.png"> 
             </a>
-          </div>
-          <div>	
             <a class="contacts__link" 
-              href="https://www.instagram.com/rozenkrantszzz" targer="blank">
-                Инстаграм		
-              </a>
-          </div>
-          <div>
+              href="https://www.instagram.com/" targer="blank"><img     src="img/inst.png">
+            </a>
             <a class="contacts__link" 
-              href="tel:89649673779" targer="blank">
-                8-964-967-37-79		
+              href="tel:896496737**" ><img src="img/tel.png">
+            </a>
+            <a class="contacts__link"
+              href="https://Azartdzirt@yandex.ru"><img src="img/mail.png" target="blank">
             </a>
           </div>
         </div>
       </div>
     </div>
+  
     @@include('./../components/footer.html') 
+  
   </body>
   <script src="script.js"></script>
 </html>	

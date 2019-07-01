@@ -1,44 +1,38 @@
 .header {
 	background: #FFFFFF;
 	box-sizing: border-box;
-	padding: 35px 0 35px 0;
-    
-	&_nav {
-		margin-top: 21px;
-	}
-	
-	&_logo__img {
-		width: 191px;
-		height: 79px;
-		box-shadow: 0px 4px 10px rgba(85, 78, 78, 0.25);
-	} 
-	
-	&__link_margin {
-		width: 100%;
-		color: black;
-		margin-right: 19px;
-		font-size: 36px;
-		line-height: 54px;
-	}	
-	
-	&__link_margin:hover {
-		color: #FF6969;
-		cursor:  url("./img/mouse.png"),default; 
-		text-decoration: none;
-	}
+	padding: 27px 0 27px 0;
 
-	&__links {
-	  margin-right: 23px;
-		color: black;
-		width: 100%;
-		font-style: bold;
-		font-size: 36px;
-		line-height: 54px;
+	&-conteiner{
+		display: flex;
+		justify-content: space-between;
 	}
 	
-	&__links:hover {
-		color: #FF6969;
-		cursor:  url("./img/mouse.png"),default; 
+	&__img {
+		width: 115px;
+		height: 47.57px;
+		box-shadow: 0px 4px 10px rgba(85, 78, 78, 0.25);
+	}
+	
+	&__nav {
+		@extend %flex;
+	}
+	
+	&__link {
+		color: black;
+		font-weight: 300;
+		@include font-line(16px,22px);
+		margin-right: 12px;
+	}
+	
+	&__link:hover {
 		text-decoration: none;
 	}
 }
+	
+
+
+	
+
+ 
+	

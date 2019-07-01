@@ -1,12 +1,16 @@
 .footer {
-	background: #45B7E3;
+	background: #FFFFFF;
+	
+	&-flex{
+	display:flex;
+	justify-content: space-between;
 	color: #FFFFFF;
 	box-sizing: border-box;
-	padding: 18px 0 17px 0;
-	text-align: right;
-
-	&__copyright-text {
-		font-size: 48px;
-		line-height: 72px;
+	padding: 34px 0 34px 0;
+	}
+	
+	&__text {
+		@include font-line(16px,22px);
+		color: black;
 	}
 }

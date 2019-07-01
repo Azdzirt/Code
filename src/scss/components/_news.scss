@@ -1,0 +1,45 @@
+.news-block{
+    margin:0 auto; 
+    background: #FFFFFF;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.07);
+
+    &__title{
+        margin : 15px 0 10px 21;
+        font-weight: bold;
+        @include font-line(20px,27px);
+    }
+    
+    &__text{
+        padding: 0 21px 47px 19px ;
+        @include font-line(20px,27px);
+        
+    }
+     
+    &__link	{
+        @extend %flex;
+        width: 214.77px;
+        height: 44px;
+        background: #FFE01B;
+        margin: 0 0 20 21;
+        font-size: 24px;
+        line-height: 24px;
+        color: black;
+        font-family: 'Bebas Neue', arial;
+    }
+
+    &__link:hover{
+        text-decoration: none;
+    }
+   
+    &_two{
+        display: flex;
+    }
+    
+    &__text-data{
+    	margin-left:  21px;
+   	    align-items: center;
+    	padding-bottom: 25px;
+    	display: flex;
+    	@include font-line(20px,27px);
+	}
+}
