@@ -4,13 +4,11 @@
 	&-flex{
 	display:flex;
 	justify-content: space-between;
-	color: #FFFFFF;
-	box-sizing: border-box;
-	padding: 34px 0 34px 0;
+	padding: 34px 0;
 	}
 	
 	&__text {
-		@include font-line(16px,22px);
+		@include font-line(16,22);
 		color: black;
 	}
 }

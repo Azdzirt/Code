@@ -1,0 +1,26 @@
+.bottom1{
+  &__link {
+    @extend %flex;
+    @include font-line(24,24);
+    font-family: "BebasNeue";
+    width: 127px;
+    height: 44px;
+    background: #FFE01B;
+    color:black;
+    text-transform: uppercase;
+    transition: 200ms ease ;
+	
+    &:hover{
+      text-decoration: none;
+      color:black;
+    }
+    
+    &:active{
+      text-decoration: none;
+      color:black;
+      width: 130.37px;
+      height: 39px;
+      background: #FFEB6C;	
+    }		
+  }
+}

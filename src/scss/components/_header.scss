@@ -1,35 +1,43 @@
 .header {
 	background: #FFFFFF;
-	box-sizing: border-box;
-	padding: 27px 0 27px 0;
+	padding:27px 0 ;
 
-	&-conteiner{
-		display: flex;
+	&__container{
+		@extend %flex;
 		justify-content: space-between;
 	}
 	
 	&__img {
 		width: 115px;
 		height: 47.57px;
-		box-shadow: 0px 4px 10px rgba(85, 78, 78, 0.25);
-	}
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+		transition: 1000ms ease ;
+		
+		&:active{
+		transform: rotate(360deg);
+		}
+	}	
 	
-	&__nav {
-		@extend %flex;
-	}
 	
 	&__link {
 		color: black;
-		font-weight: 300;
-		@include font-line(16px,22px);
+		@include font-line(16,22);
 		margin-right: 12px;
+		
+		&:hover{
+			color: #FF6969;
+		}
 	}
 	
-	&__link:hover {
-		text-decoration: none;
-	}
-}
+	&__link-two{
+		color: black;
+		@include font-line(16,22);
 	
+		&:hover {
+			color: #FF6969;
+		}
+	}
+}	
 
 
 	

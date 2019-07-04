@@ -8,17 +8,18 @@
 		@include font-line(55px,75px);
 		margin-bottom: 40px;
 		font-weight: bold;
+		font-size: 55px;
 	}
 
 	&_flex {
 		display: flex;
-		justify-content: space-between;
-	
 	}
 
 	&__img {
 		width: 280px;
 		height: 265px;
+		display: flex;
+		flex-wrap: wrap;
 	}
 	
 	&__text {
@@ -26,21 +27,21 @@
 	}
 	 
 	&__text-info {
-   		@include font-line(20px,27px);
-    	margin-bottom: 57px;
-    }
+		@include font-line(20,27);	
+   	margin-bottom: 57px;
+  }
 	
-  	&__link {
-    	@extend %flex;
-    	@include font-line(24px,24px);	
-    	width: 127px;
-    	height: 44px;
-    	background: #FFE01B;
+  &__link {
+   	@extend %flex;
+   	@include font-line(24,24);	
+   	width: 127px;
+   	height: 44px;
+   	background: #FFE01B;
 		color:black;
-		font-family: 'Bebas Neue', arial;
- 	 }
+		font-family: 'Bebas Neue', sans-serif;
+  }
 	 
-	  &__link:hover{
+  &__link:hover {
 		text-decoration: none;
 	}
 }		
@@ -55,33 +56,36 @@
 		justify-content: center;
 		font-weight: bold;
 		margin-bottom: 40px;
-		@include font-line(55px,75px);
+		@include font-line(55,75);
 	}
 
 	&__img {
-
 	 	max-width: 380px;
 		display: flex;
 		justify-content: space-between;
-		
+		animation-duration: 3s;
+		animation-name: slidein;
 	}
-	
+
+	@keyframes slidein {
+		from {
+		  margin-left: 100%;
+		  width: 300%; 
+		}
+		to {
+		  margin-left: 0%;
+		  width: 100%;
+		}
+	}
 	&__wrap {
 		margin: 0 20px 30px 0;
-		
- 
 	}
 	 
 	&__nav {
-  		@extend %flex;
- 		@include font-line(24px,24px);
-   		margin: 0 auto;
-   		margin-top:30px;
-   		width: 278px;
-   		height: 44px;
-		   background: #FFE01B;
-		color: black;
-		font-family: 'Bebas Neue', arial;
+		margin: 0 auto;
+  	margin-top:30px;
+  	width: 278px;
+  	height: 44px;
 	}
 	 
 	&__nav:hover{
@@ -95,7 +99,7 @@
 
 	&__title{	
 		@extend %flex;
-		@include font-line(55px,75px);
+		@include font-line(55,75);
 		font-weight: bold;
 		margin-bottom: 30px;
 	}
@@ -111,10 +115,29 @@
 		height: 171px;
 		background: #343434;
 		margin-right: 20px;
+	
+		&:hover {
+			transform:scale(1.1);
+		}
+	
+		&:active{
+			height: 150px;		
+		}
 	}
 	
-	&__link:hover {
-		color: #FF6969;
-		cursor:  url("./img/mouse.png"),progress; 
+	&__link-two {
+		@extend %flex;
+		width: 280px;
+		height: 171px;
+		background: #343434;
+
+		&:hover {
+			transform:scale(1.1);	
+    }
+	
+		&:active{
+		width: 280px;
+		height: 150px;		
+		}
 	}
 }

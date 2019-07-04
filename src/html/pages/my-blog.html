@@ -14,35 +14,39 @@
    
     <div class="my-blog">
       <div class="container">
-        <div class="my-block__tools">
-          <h1 class="my-block__text">
+        <div class="my-blog__tools">
+          <dev class="my-blog__news">
             МОЙ БЛОГ
-          </h1>
-              <div class="my-block__img">
-                <div class="my-block__item">
+          </dev>
+              <div class="my-blog__img">
+                <div class="my-blog__item">
                   @@include('./../components/news.html')
                 </div>
-                <div class="my-block__item">
+                <div class="my-blog__item">
                   @@include('./../components/news.html')
                 </div>
-                <div class="my-block__item-two">
-                  @@include('./../components/news.html')
-                </div>
-              </div>
-              <div class="my-block__img">
-                <div class="my-block__item">
-                  @@include('./../components/news.html')
-                </div>
-                <div class="my-block__item">
-                  @@include('./../components/news.html')
-                </div>
-                <div class="my-block__item-two">
+                <div class="my-blog__item-two">
                   @@include('./../components/news.html')
                 </div>
               </div>
-              <div class="my-block__nav">
-                ЗАГРУЗИТЬ ЕЩЕ
-              </div>  
+              <div class="my-blog__img">
+                <div class="my-blog__item">
+                  @@include('./../components/news.html')
+                </div>
+                <div class="my-blog__item">
+                  @@include('./../components/news.html')
+                </div>
+                <div class="my-blog__item-two">
+                  @@include('./../components/news.html')
+                </div>
+              </div>
+        </div>  
+              <div class="my-blog__nav">
+                @@include('./../components/bottom3.html', {
+                  "text": "загрузить еше",
+                  "href": "my-blog.html",
+                  "class": "bottom3"
+                })
         </div>
       </div>
     </div>

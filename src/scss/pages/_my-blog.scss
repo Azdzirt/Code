@@ -1,13 +1,30 @@
-.my-blog{
+.my-blog {
   background:  #F2F2F2;
   padding: 49px 0 54px 0;
-  
-  &__img{
+ 
+  &__tools {
+    flex-wrap: wrap;
+    padding-bottom:30px;
     display: flex;
   }
-.my-block__item{
-  margin: 0 20 30 0;
-  display: flex;
-  flex-wrap: wrap;
-}
+  
+  &__news {
+    font-weight: bold;
+    @include font-line(55,75);
+    margin-bottom: 70px;
+  }
+ 
+  &__img {
+    display: flex;
+  }
+  
+  &__item{
+    margin: 0 20 30 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  &__nav{
+    @extend %flex;
+  }
 }

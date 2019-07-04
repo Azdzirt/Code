@@ -1,12 +1,32 @@
 .fixed{
+  &__animation {
     @extend %flex;
     position: fixed;
-    right: 7.41%;
+    left: 91%;
     bottom: 5.63%;
+    right: 4.41%;
     background: #FF6969;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.45);
-    border-radius: 50px;	
     width: 100px;
     height: 100px;
+    border-radius: 50%; 
+  }
+   
+  @keyframes scale {
+    0%,100% {transform: scale(2);}
+    50% {transform: scale(1.2);}
+  }
     
-}
+  &__animation{
+    animation:  scale 3s infinite  ;
+  }
+
+  @keyframes rotate  {
+    0%,100% {transform: rotate(80deg);}
+    50% {transform: rotate(2deg);}
+  }     
+          
+  &__img{
+    animation:  rotate 1.5s infinite ;
+  }
+}  

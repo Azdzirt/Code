@@ -1,7 +1,6 @@
-.blog{
+.blog {
 	background: #F2F2F2;
 	padding: 50px 0 57px 0;
-	margin: 0 auto;
 	
 	&__text {
 		max-width:  980px;
@@ -10,7 +9,7 @@
 
 	&__title-one {
 		font-weight: bold;
-		@include font-line(55px,75px);
+		@include font-line(55,75);
 	}
 
 	&__title-two {
@@ -18,25 +17,26 @@
 		font-weight: bold;
 		font-size: 44px;
 		line-height: 60px;
+		text-transform: uppercase;
 	}
 
 	&__img {
-		width: 1180px;
+		max-width: 1180px;
 		height: 299px;
 		margin: 45px 0 40px 0 ;
 	}
 	
 	&__text-info {
 		margin-bottom: 52px;
-		@include font-line(20px,27px);
+		@include font-line(20,27);
 	}
 	
 	&__text-info_two {
 		margin-bottom: 40px;
-		@include font-line(20px,27px);
+		@include font-line(20,27);
 	}
 	
 	&__text-info_free{
-		@include font-line(20px,27px);
+		@include font-line(20,27);
 	}
 }
