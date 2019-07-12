@@ -1,43 +1,26 @@
-.header {
+header {
 	background: #FFFFFF;
 	padding:27px 0 ;
+	margin-right: -12px;
 
-	&__container{
+	section{
 		@extend %flex;
 		justify-content: space-between;
+		
 	}
 	
-	&__img {
+	.logo {
 		width: 115px;
 		height: 47.57px;
 		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 		transition: 1000ms ease ;
 		
-		&:active{
+		&:active {
 		transform: rotate(360deg);
 		}
 	}	
+}
 	
-	
-	&__link {
-		color: black;
-		@include font-line(16,22);
-		margin-right: 12px;
-		
-		&:hover{
-			color: #FF6969;
-		}
-	}
-	
-	&__link-two{
-		color: black;
-		@include font-line(16,22);
-	
-		&:hover {
-			color: #FF6969;
-		}
-	}
-}	
 
 
 	

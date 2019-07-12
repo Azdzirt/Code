@@ -8,18 +8,17 @@
     background: #FFE01B;
     color:black;
     text-transform: uppercase;
-    transition: 200ms ease ;
+    transition: 500ms ease ;
 	
     &:hover{
       text-decoration: none;
       color:black;
+      transform: scale(1.1)
     }
     
     &:active{
       text-decoration: none;
       color:black;
-      width: 130.37px;
-      height: 39px;
       background: #FFEB6C;	
     }		
   }

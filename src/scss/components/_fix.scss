@@ -5,30 +5,44 @@
     left: 91%;
     bottom: 5.63%;
     right: 4.41%;
-    background: #FF6969;
+    background: hsl(0, 100%, 71%);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.45);
     width: 100px;
     height: 100px;
     border-radius: 50%; 
   }
-   
+  
+  &__container {
+    animation: pulse 3s infinite;
+    border-radius: 50%; 
+  }
+  
   @keyframes scale {
     0%,100% {transform: scale(0.5);}
     50% {transform: scale(1.2);}
   }
     
-  &__animation{
-    animation:  scale 3s infinite  ;
+  &__animation {
+    animation:  scale 3s infinite ;
   }
 
-  @keyframes rotate  {
+  @keyframes rotate {
     0%,100% {transform: rotate(80deg);}
     50% {transform: rotate(2deg);}
   }     
-          
-  &__img{
-    
+  
+  @keyframes pulse {
+    15% {box-shadow: 0 0 0 0px rgba(255, 105, 105, 0.4);}
+    75% {box-shadow: 0 0 0 70px rgba(255, 105, 105, 0);}
+  }    
+  
+  &__img {
     animation:  rotate 1.5s infinite ;
     background: url("./img/phone.png");
   }
-}  
+}
+
+
+
+
+  

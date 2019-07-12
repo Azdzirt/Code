@@ -8,6 +8,17 @@
 	font-size: $font + px;
 	line-height: $line + px;
 }
+@mixin sprite($item) {
+	width: 71px;
+	height: 71px;
+	background-position: ($item * (-71)) + px top;
+}
+@mixin link($item) {
+	width: 110px;
+	height: 110px;
+	background-position: ($item * (-110)) + px bottom;
+}
+
 
 %flex {
 	display: flex;
@@ -15,13 +26,25 @@
 	align-items: center;
 }
 
+
 body {
 	font-family: 'Open Sans Condensed', sans-serif
 	!important;
+	transition: 500ms ease !important;
 } 
 
-.container {
+article {
 	margin: 0 auto;
 	max-width: 1220px;
 	padding: 0 20px;
+}
+
+.link {
+	color: black;
+	@include font-line(16,22);
+	margin-right: 12px;
+	
+	&:hover {
+		color: #FF6969;
+	}
 }

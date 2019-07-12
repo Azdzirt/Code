@@ -1,5 +1,6 @@
 .info-block {
-	padding: 50px 0 70px 0;
+	
+	padding: 50px 0 50px 0;
 	background: linear-gradient(to top, rgba(0, 0, 0,0.7), rgba(0, 0, 0, 0.7) ), url("./img/фон.png") no-repeat center / cover;
 	color: #FFFFFF;
 	margin: 0 auto;
@@ -19,7 +20,6 @@
 		width: 280px;
 		height: 265px;
 		display: flex;
-		flex-wrap: wrap;
 	}
 	
 	&__text {
@@ -28,29 +28,28 @@
 	 
 	&__text-info {
 		@include font-line(20,27);	
-   	margin-bottom: 57px;
-  }
+   		margin-bottom: 57px;
+  	}
 	
-  &__link {
-   	@extend %flex;
-   	@include font-line(24,24);	
-   	width: 127px;
-   	height: 44px;
-   	background: #FFE01B;
+  	&__link {
+   		@extend %flex;
+   		@include font-line(24,24);	
+   		width: 127px;
+   		height: 44px;
+   		background: #FFE01B;
 		color:black;
 		font-family: 'Bebas Neue', sans-serif;
-  }
+  	}
 	 
-  &__link:hover {
+  	&__link:hover {
 		text-decoration: none;
 	}
 }		
 	
 .my-block {
 	background: #F2F2F2;
-	padding: 54px 0 55px 0;
-	margin: 0 auto;
-
+	padding: 50px 0 50px 0;
+	
  	&__text {
 		display: flex;
 		justify-content: center;
@@ -60,9 +59,9 @@
 	}
 
 	&__img {
-	 	max-width: 380px;
+		margin: -10px -10px ;
 		display: flex;
-		justify-content: space-between;
+		flex-wrap: wrap;
 		animation-duration: 3s;
 		animation-name: slidein;
 	}
@@ -77,67 +76,105 @@
 		  width: 100%;
 		}
 	}
-	&__wrap {
-		margin: 0 20px 30px 0;
-	}
-	 
+		 
 	&__nav {
 		margin: 0 auto;
-  	margin-top:30px;
-  	width: 278px;
-  	height: 44px;
-	}
-	 
-	&__nav:hover{
-		text-decoration: none;
+  		margin-top:50px;
+  		width: 278px;
+  		height: 44px;
+	
+	 	&:hover{
+			text-decoration: none;
+		}		
 	}	
-}	
+}
 
 .contacts {
-	padding: 33px 0 54px 0;
+	padding: 50px 0 50px 0;
 	background: #FFE01B;
 
-	&__title{	
+	&__title {	
 		@extend %flex;
 		@include font-line(55,75);
 		font-weight: bold;
-		margin-bottom: 30px;
-	}
+		margin-bottom: 40px;
+	} 
 		
-	&__block{
+	&__block {
 		display: flex;
-		justify-content: space-between;
+		margin: 0 -10px;
 	}
 	
 	&__link {
 		@extend %flex;
-		width: 280px;
+		width: 300px;
 		height: 171px;
 		background: #343434;
-		margin-right: 20px;
-	
+		margin: 0 10px;
+		flex-direction: column;
+		padding-top: 63px;
+		text-decoration: none !important;
+		
 		&:hover {
-			transform:scale(1.1);
-		}
-	
-		&:active{
-			height: 150px;		
-		}
+			transform: scale(1.1);
+		}	 
 	}
 	
-	&__link-two {
-		@extend %flex;
-		width: 280px;
-		height: 171px;
-		background: #343434;
+	&__link_one {
+		transition: transform 500ms;
+		background: url("./img/sprite.png");
+		@include link(0);
+		margin: -50px 0;
+	}
+	
+	:hover .contacts__link_one{
+		transform: translateY(-10px);
+	}
 
-		&:hover {
-			transform:scale(1.1);	
-    }
-	
-		&:active{
-		width: 280px;
-		height: 150px;		
-		}
+	&__link_two {
+		transition: transform 500ms;
+		background: url("./img/sprite.png");
+		@include link(1);
+		margin: -50px 0;
 	}
-}
+	
+	:hover .contacts__link_two{
+		transform: translateY(-10px);
+	}
+
+	&__link_three {
+		transition: transform 500ms;
+		background: url("./img/sprite.png");
+		@include link(2);
+		margin: -50px 0;
+	}
+	
+	:hover .contacts__link_three{
+		transform: translateY(-10px);
+	}
+
+	&__link_four {
+		transition: transform 500ms;
+		background: url("./img/sprite.png");
+		@include link(3);
+		margin: -50px 0;
+	}
+	
+	:hover .contacts__link_four{
+		transform: translateY(-10px);
+	}
+	
+	&__link_text {
+		text-transform: uppercase;
+		opacity: 0;
+		color: #fff;
+		transition: transform 500ms;
+	}
+	
+	:hover .contacts__link_text {
+		opacity: 1;
+		transform: translateY(10px);
+	}
+} 
+		
+	

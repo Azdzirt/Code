@@ -1,29 +1,25 @@
 .my-blog {
   background:  #F2F2F2;
-  padding: 49px 0 54px 0;
+  padding: 50px 0 70px 0;
  
   &__tools {
     flex-wrap: wrap;
-    padding-bottom:30px;
+    padding-bottom:40px;
     display: flex;
   }
   
   &__news {
     font-weight: bold;
     @include font-line(55,75);
-    margin-bottom: 70px;
+    margin-bottom: 30px;
   }
  
   &__img {
     display: flex;
-  }
-  
-  &__item{
-    margin: 0 20 30 0;
-    display: flex;
     flex-wrap: wrap;
+    margin: 0 -10px ;
   }
-  
+ 
   &__nav{
     @extend %flex;
   }

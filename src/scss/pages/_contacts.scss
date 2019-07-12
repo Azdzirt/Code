@@ -1,0 +1,82 @@
+.my-info{
+  	background: #F2F2F2;
+    padding: 50px 0;
+   
+	&__content {
+    	font-style: normal;
+		font-weight: bold;
+		@include font-line(55,75);
+    	margin-bottom: 55px;
+    }
+
+    &__img {
+        padding-right:  20px ;
+    	width:300px;
+		height: 285px;
+    }
+    
+    &_block {
+  	    display: flex;  
+     
+    }
+   
+    &-two {    
+ 	    display: flex;  
+    	flex-wrap: wrap;
+    }
+ 
+    &__text {
+		font-weight: bold;
+		@include font-line(45,61);
+    	margin-bottom: 35px;
+    }
+   
+    &__text_info {
+		@include font-line(20,27);
+	}
+   
+	&__sprite{
+    	padding-left:292px;
+  	 	display: flex;
+    	align-items: center;
+    	justify-content: flex-start;
+    	padding-bottom: 30px;
+    }
+   
+	&__sprite-one{
+    	background: url("./img/sprite.png");
+    	@include sprite(0);
+    	margin-right: 7px;
+    }
+	  
+	&__sprite-two{
+    	background: url("./img/sprite.png");
+    	@include sprite(1);
+    	margin-right: 9px;
+  	}
+  
+	&__sprite-three{
+    	background: url("./img/sprite.png");
+    	@include sprite(2);
+  	}
+  
+	&__sprite-text{
+		font-weight: bold;
+		@include font-line(24,33);
+        padding:  5px 10px 0 10px ;
+    	text-transform: uppercase;
+  	}
+
+  	&__foto-block{
+    	display: flex;
+    	flex-wrap: wrap;
+    	margin: 0 - 10px;
+  	}
+	  
+	&__button{
+    	display: flex;
+    	justify-content: center; 
+    	padding-top: 50px;
+    	margin: 0 auto;
+    }
+}

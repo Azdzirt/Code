@@ -1,13 +1,13 @@
-.footer {
+footer {
 	background: #FFFFFF;
 	
-	&-flex{
-	display:flex;
-	justify-content: space-between;
-	padding: 34px 0;
+	section {
+		display:flex;
+		justify-content: space-between;
+		padding: 34px 0;
 	}
 	
-	&__text {
+	address {
 		@include font-line(16,22);
 		color: black;
 	}
