@@ -1,15 +1,33 @@
 .bottom1{
+ 
   &__link {
     @extend %flex;
-    @include font-line(24,24);
     font-family: "BebasNeue";
-    width: 127px;
-    height: 44px;
     background: #FFE01B;
     color:black;
     text-transform: uppercase;
     transition: 500ms ease ;
-	
+   
+    @media (max-width: 2560px) and (min-width: 1024px) {
+      width: 128px;
+      height: 44px;
+      @include font-line(24,24);
+    }
+    @media (max-width: 1023px) and (min-width: 768px) {
+      width: 113px;
+      height: 35px;
+      @include font-line(22,22);
+    }
+    @media (max-width: 1023px) and (min-width: 768px) {
+      width: 113px;
+      height: 35px;
+    }
+    @media (max-width: 767px) and (min-width: 200px) {
+      width: 280px;
+      height: 30px;
+      @include font-line(20,20);
+    }
+      
     &:hover{
       text-decoration: none;
       color:black;

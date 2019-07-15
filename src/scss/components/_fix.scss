@@ -1,5 +1,7 @@
 .fixed{
+ 
   &__animation {
+  
     @extend %flex;
     position: fixed;
     left: 91%;

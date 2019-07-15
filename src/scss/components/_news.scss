@@ -1,46 +1,87 @@
-.news-block {
-	padding: 10px 10px;
-	max-width: 400px;
+.news {
+	@media (max-width: 2500px) and (min-width: 1024px) {
+		  max-width: 380px;
+		  @include font-line(20,27);
+	}
+	@media (max-width: 1023px) and (min-width: 768px) {
+		width: 340px;
+		@include font-line(18,25);
+	}
+	@media (max-width: 767px) and (min-width: 200px) {
+		max-width: 280px;
+		@include font-line(16,22);
+	}
+
 	
 	&_padding {
-		margin:0 auto; 
 		background: #FFFFFF;
 		box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.07);
 	}
 	
+	&__img {
+		background: url("./img/картинка.png");
+		max-height: 180px;
+		@media (max-width: 2500px) and (min-width: 1024px) {
+			width: 380px;
+			height: 180px;
+		}
+	  
+	@media (max-width: 1023px) and (min-width: 768px) {
+		width: 340px;
+		height: 180px;
+	}
+	  
+	@media (max-width: 767px) and (min-width: 200px) {
+		width: 280px;
+		height: 150px;
+	} 
+}
+
 	&__content {
 		padding: 0 20px 20px 20px;
+		
 	}
 	
 	&__title {
 		padding: 15px 0 10px 0;
 		font-weight: bold;
-		@include font-line(20,27);
+		@media (max-width: 1023px) and (min-width: 100px) {
+			padding: 20px 0 10px 0;
+		}
 	}
 	
-	&__text{
-		@include font-line(20,27);
-    }
-     
 	&__link	{
+		@media (max-width: 2500px) and (min-width: 1024px) {
+			width: 190px;
+			height: 44px;
+			font-size: 24px;
+			margin-top: 47px;
+		} 
+		@media (max-width: 1023px) and (min-width: 768px) {
+			width: 170px;
+			height: 35px;
+			font-size: 22px;
+			margin-top: 15px;
+	  	}
+	 	@media (max-width: 767px) and (min-width: 200px) {
+			width: 153px;
+			height: 30px; 
+			font-size: 20px;
+			margin-top: 15px;
+	 	}
 		@extend %flex;
-		width: 190px;
-		height: 44px;
 		background: #FFE01B;
-		margin: 47px 0 0 0;
-		font-size: 24px;
-		line-height: 24px;
 		color: black;
 		font-family: "BebasNeue";
 		transition: 500ms ease ;
-	
-		&:hover{
+		
+		&:hover {
 			text-decoration: none;
 			color:black;
 			transform: scale(1.1);
     	}
 		
-		&:active{
+		&:active {
 			text-decoration: none;
 			color:black;
            	background: #FFEB6C;	
@@ -54,7 +95,12 @@
   	&__text-data {
   		margin: 55px 10px 10px 30px;
 		align-items: center;
-   	   	display: flex;
-		@include font-line(20,27);   
+		display: flex;
+		@media (max-width: 1024px) and (min-width: 768px) {
+			margin: 20px 0px 0px 19px;
+		}
+		@media (max-width: 767px) and (min-width: 200px) {
+			margin: 20px 0px 0px 19px;
+	 	}
 	}
 }

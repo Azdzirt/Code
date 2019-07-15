@@ -1,20 +1,55 @@
 .info-block {
 	
-	padding: 50px 0 50px 0;
+	
 	background: linear-gradient(to top, rgba(0, 0, 0,0.7), rgba(0, 0, 0, 0.7) ), url("./img/фон.png") no-repeat center / cover;
 	color: #FFFFFF;
 	margin: 0 auto;
+	@media (max-width: 2500px) and (min-width: 1024px) {
+		padding: 50px 0 50px 0;
+	  }
+	@media (max-width: 1023px) and (min-width: 768px) {
+		padding: 30px 0 50px 0;
+		 }
+	 
+	  @media (max-width: 767px) and (min-width: 200px) {
+		padding: 30px 0 40px 0;
+	  }
 	
+	
+	&__fixed{
+		@media (max-width: 1023px) and (min-width: 100px) {
+			display: none;
+			 }
+	}
+
 	&__content {
 		@include font-line(55px,75px);
 		margin-bottom: 40px;
 		font-weight: bold;
 		font-size: 55px;
+	
+	
+	  
+	  @media (max-width: 1023px) and (min-width: 768px) {
+		@include font-line(45,61);
+		margin-bottom: 30px;
+		 }
+	 
+	  @media (max-width: 767px) and (min-width: 100px) {
+		@include font-line(30,41);
+		margin-bottom: 20px;
+	  }
+
 	}
 
 	&_flex {
 		display: flex;
+		
+		 
+		  @media (max-width: 767px) and (min-width: 100px) {
+			flex-direction: column;
 	}
+}
 
 	&__img {
 		width: 280px;
@@ -24,11 +59,36 @@
 	
 	&__text {
 		margin-left: 20px;
+		
+   
+    @media (max-width: 767px) and (min-width: 200px) {
+		margin-left: 0;
+	}	
+		@media (max-width: 1023px) and (min-width: 768px) {
+			width:390px;
+		   
+			 }
+    
 	}
 	 
 	&__text-info {
-		@include font-line(20,27);	
-   		margin-bottom: 57px;
+		
+		   @media (max-width: 2500px) and (min-width: 1024px) {
+			@include font-line(20,27);	
+		   padding-bottom: 57px;
+			 } 
+		   
+		   @media (max-width: 1023px) and (min-width: 768px) {
+			 @include font-line(18,25);
+			 padding-bottom: 30px;
+			
+			  }
+		  
+		   @media (max-width: 767px) and (min-width: 200px) {
+			   padding: 25px 0;
+			   margin:0;
+			 @include font-line(16,22);
+		   }
   	}
 	
   	&__link {
@@ -47,23 +107,57 @@
 }		
 	
 .my-block {
+	
 	background: #F2F2F2;
-	padding: 50px 0 50px 0;
+	padding: 50px 0 0px 0;
+	@media (max-width: 1023px) and (min-width: 768px) {
+		padding: 30px 0 0px 0;
+		
+		 }
+	 
+	 	 
+	  @media (max-width: 767px) and (min-width: 200px) {
+		padding: 30px 0 25px 0;
+	  }
 	
  	&__text {
-		display: flex;
+		display:flex;
+		
 		justify-content: center;
 		font-weight: bold;
 		margin-bottom: 40px;
 		@include font-line(55,75);
+		@media (max-width: 1023px) and (min-width: 768px) {
+			margin-bottom: 30px;
+
+			@include font-line(45,61);
+			 }
+		 
+		  @media (max-width: 767px) and (min-width: 200px) {
+			margin-bottom: 20px;
+			@include font-line(30,41);
+		  }
 	}
 
-	&__img {
-		margin: -10px -10px ;
-		display: flex;
-		flex-wrap: wrap;
+	&__news{
+		
 		animation-duration: 3s;
 		animation-name: slidein;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 20px;
+		padding-bottom: 50px;
+		
+		@media (max-width: 1199px) and (min-width: 200px) { 
+			& > .news:nth-child(3) {display: none;}
+			padding-bottom: 40px;
+
+		}
+			
+		@media (max-width: 767px) and (min-width: 200px) {
+			& > .news:nth-child(2) {display: none;}
+			padding-bottom: 25px;
+		}
 	}
 
 	@keyframes slidein {
@@ -78,10 +172,25 @@
 	}
 		 
 	&__nav {
-		margin: 0 auto;
-  		margin-top:50px;
-  		width: 278px;
-  		height: 44px;
+		display: flex;
+
+		justify-content: center;
+		@media (max-width: 2500px) and (min-width: 768px) { 
+			
+			padding-bottom: 50px;
+		}
+		
+		
+
+		@media (max-width: 1024px) and (min-width: 768px) { 
+		
+		
+
+		}
+		
+		
+
+  		
 	
 	 	&:hover{
 			text-decoration: none;
@@ -90,27 +199,56 @@
 }
 
 .contacts {
-	padding: 50px 0 50px 0;
+	
 	background: #FFE01B;
+	@media (max-width: 2500px) and (min-width: 1024px) {padding: 50px 0 50px 0; }
+	@media (max-width: 1023px) and (min-width: 768px) {
+		padding: 30px 0 40px 0;
+		 }
+	 
+	  @media (max-width: 767px) and (min-width: 200px) {
+		padding: 30px 0 20px 0;
+	  }
 
 	&__title {	
 		@extend %flex;
-		@include font-line(55,75);
+		
 		font-weight: bold;
-		margin-bottom: 40px;
+		
+		@media (max-width: 2500px) and (min-width: 1024px) {margin-bottom: 40px;
+			@include font-line(55,75); }
+		@media (max-width: 1023px) and (min-width: 768px) {
+			@include font-line(45,61);
+			margin-bottom: 30px;
+			 }
+		 
+		  @media (max-width: 767px) and (min-width: 200px) {
+			@include font-line(30,41);
+			margin-bottom: 20px;
+
+
+		  }
 	} 
 		
 	&__block {
+		
 		display: flex;
-		margin: 0 -10px;
+		margin: -10px -10px;
+		flex-wrap: wrap;
+		justify-content: center;
+		
 	}
 	
 	&__link {
 		@extend %flex;
-		width: 300px;
+		width: 280px;
 		height: 171px;
+		@media (max-width: 1023px) and (min-width: 100px) {height: 150px;}
+		@media (max-width: 767px) and (min-width: 200px) {
+			margin-bottom: 15px;}
+		
 		background: #343434;
-		margin: 0 10px;
+		margin: 10px 10px;
 		flex-direction: column;
 		padding-top: 63px;
 		text-decoration: none !important;
@@ -158,6 +296,7 @@
 		background: url("./img/sprite.png");
 		@include link(3);
 		margin: -50px 0;
+		
 	}
 	
 	:hover .contacts__link_four{
@@ -177,4 +316,3 @@
 	}
 } 
 		
-	

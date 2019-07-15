@@ -30,19 +30,27 @@
 body {
 	font-family: 'Open Sans Condensed', sans-serif
 	!important;
-	transition: 500ms ease !important;
+
 } 
 
 article {
 	margin: 0 auto;
 	max-width: 1220px;
 	padding: 0 20px;
+	@media (max-width: 1023px) and (min-width: 768px) { 
+			
+		padding: 0 34px;
+	}
 }
 
 .link {
 	color: black;
 	@include font-line(16,22);
 	margin-right: 12px;
+	
+	@media (max-width: 767px) and (min-width: 200px) { 
+		margin-right: 10px;
+	}
 	
 	&:hover {
 		color: #FF6969;

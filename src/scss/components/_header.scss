@@ -9,6 +9,12 @@ header {
 		
 	}
 	
+	nav{
+		@media (max-width: 767px) and (min-width: 200px) { 
+		display: none;
+		}
+	}
+	
 	.logo {
 		width: 115px;
 		height: 47.57px;

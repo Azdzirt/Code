@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="main.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&display=swap&subset=cyrillic" rel="stylesheet">
@@ -11,11 +13,14 @@
 	<body>
    
     @@include('./../components/header.html')
-
-    @@include('./../components/fix.html')
+    
+    
    
     <div class="info-block">
-        <article>
+      <article>
+          <div class="info-block__fixed">
+              @@include('./../components/fix.html')
+          </div>
         <div class="info-block__content">
           <h class="info-block__title">
              ОБО МНЕ
@@ -26,7 +31,8 @@
           <div class="info-block__text">
             <div class="info-block__text-info">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio quasi culpa eveniet assumenda quia qui molestiae est ea odio quos voluptatibus perspiciatis, ipsam impedit tempore ducimus omnis deserunt adipisci inventore dicta consectetur, reiciendis fugiat ad! Eum excepturi accusantium amet odio corporis? Odio dignissimos repudiandae vero sapiente voluptatum laboriosam fuga quidem quos, nostrum voluptate, qui recusandae commodi. Aliquid tenetur repellat velit assumenda sapiente aspernatur ratione, error labore pariatur cum architecto debitis odio mollitia unde officiis distinctio quia quam, voluptas quidem quasi dolorum, repudiandae obcaecati. Veniam voluptatibus dolorum iste molestiae repellat officiis quibusdam recusandae sequi cupiditate, sit corrupti! Illo, esse quibusdam? 
-            </div>   
+            </div>  
+             
             @@include('./../components/bottom1.html', {
               "text": "Подробнее",
               "href": "contacts.html",
@@ -38,10 +44,11 @@
     </div>
     <div class="my-block">
         <article>
+            <div class="my-block__content">
         <div class="my-block__text">
           МОЙ БЛОГ
         </div>
-        <div class="my-block__img">
+        <div class="my-block__news">
           
           @@include('./../components/news.html')
                     
@@ -58,6 +65,7 @@
           })
         </div>
       </div>
+        </article>
     </div>
     <div class="contacts">
         <article>
@@ -89,8 +97,9 @@
             
           </div>
         </div>
+      </article>
       </div>
-    </article>
+    
   
     @@include('./../components/footer.html') 
   
