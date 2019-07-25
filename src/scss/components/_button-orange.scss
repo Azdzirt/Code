@@ -1,0 +1,70 @@
+.button-orange {
+  text-transform: uppercase;
+  background: #FFCE51;
+  border-radius: 10px;
+  width: 210px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:30px;
+  
+  @media (max-width: 767px) and (min-width: 320px) {  
+    width:280px;
+    height:40px;
+  }
+  
+  &:hover{
+    text-decoration: none;
+    color: #3A4959; 
+    transform: scale(1.1)
+  }
+
+  &:active{
+    text-decoration: none;
+    background: #FFEB6C;	
+  }		
+  
+  &__text {
+    @include font-line(13,18);
+    text-decoration: none;
+    color: #3A4959;
+    font-weight: bold;
+
+    &:hover{
+      text-decoration: none;
+      color: #3A4959;
+    }
+  }
+}
+
+.button-orange-two{
+  @media (max-width: 1400px) and (min-width: 768px) {
+    display: none;
+  }
+  @media (max-width: 767px) and (min-width: 320px) { 
+    background: #FFCE51;
+    border-radius: 10px;
+    width: 240px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+     color: #3A4959;
+    @include font-line(13,18);
+  }
+  
+  &:hover{
+    text-decoration: none;
+    color: #3A4959; 
+    transform: scale(1.1)
+  }
+
+  &:active{
+    text-decoration: none;
+    background: #FFEB6C;	
+  }		
+}
+  

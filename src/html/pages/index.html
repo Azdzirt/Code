@@ -16,35 +16,33 @@
     
     
    
-    <div class="info-block">
-      <article>
-          <div class="info-block__fixed">
-              @@include('./../components/fix.html')
-          </div>
-        <div class="info-block__content">
-          <h class="info-block__title">
-             ОБО МНЕ
-          </h>
+    <section class ="info-block">
+      <div class="container">
+        <article class="info-block__fixed">
+          @@include('./../components/fix.html')
+        </article>
+        <div class="info-block__title">
+          ОБО МНЕ
         </div>
-        <div class="info-block_flex">
-          <img class="info-block__img" src="./img/фото.png"></img> 
-          <div class="info-block__text">
-            <div class="info-block__text-info">
+        <div class="info-block__content">
+          <img class="info-block__img" src="./img/фото.png"> 
+          <div class="info-block__content-text">
+            <div class="info-block__info">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio quasi culpa eveniet assumenda quia qui molestiae est ea odio quos voluptatibus perspiciatis, ipsam impedit tempore ducimus omnis deserunt adipisci inventore dicta consectetur, reiciendis fugiat ad! Eum excepturi accusantium amet odio corporis? Odio dignissimos repudiandae vero sapiente voluptatum laboriosam fuga quidem quos, nostrum voluptate, qui recusandae commodi. Aliquid tenetur repellat velit assumenda sapiente aspernatur ratione, error labore pariatur cum architecto debitis odio mollitia unde officiis distinctio quia quam, voluptas quidem quasi dolorum, repudiandae obcaecati. Veniam voluptatibus dolorum iste molestiae repellat officiis quibusdam recusandae sequi cupiditate, sit corrupti! Illo, esse quibusdam? 
             </div>  
              
             @@include('./../components/bottom1.html', {
               "text": "Подробнее",
-              "href": "contacts.html",
+              "href": "more.html",
               "class": "bottom1"
             })
           </div>
         </div>
-      </article>
-    </div>
-    <div class="my-block">
-        <article>
-            <div class="my-block__content">
+      </div>
+    </section>
+    <section class="my-block">
+      <div class="container">
+        <div class="my-block__content">
         <div class="my-block__text">
           МОЙ БЛОГ
         </div>
@@ -65,42 +63,41 @@
           })
         </div>
       </div>
-        </article>
     </div>
-    <div class="contacts">
-        <article>
+    </section>
+    <section class ="contacts">
+      <div class="container">
         <div class="contacts__content">
-          <h class="contacts__title">
+          <div class="contacts__title">
             КОНТАКТЫ
-          </h>
-          <div class="contacts__block">
+          </div>
+          <div class="contacts__links">
             <a class="contacts__link"  
               href="https://vk.com/">
-              <div class ="contacts__link_one" ></div>
-              <div class="contacts__link_text">перейти в vk</div>
+              <div class ="contacts__link-one" ></div>
+              <div class="contacts__link-text">перейти в vk</div>
             </a>
             <a class="contacts__link"  
               href="https://instagram.com/">
-              <div class ="contacts__link_two" ></div>
-              <div class="contacts__link_text">перейти в inst</div>
+              <div class ="contacts__link-two" ></div>
+              <div class="contacts__link-text">перейти в inst</div>
             </a>
             <a class="contacts__link"  
               href="tel:89649673739">
-              <div class ="contacts__link_three" ></div>
-              <div class="contacts__link_text">брякнуть старому друже</div>
+              <div class ="contacts__link-three" ></div>
+              <div class="contacts__link-text">брякнуть старому друже</div>
             </a>
             <a class="contacts__link"  
               href="https://mail.yandex.ru/?uid=46416820#compose">
-              <div class ="contacts__link_four" ></div>
-              <div class="contacts__link_text">напысать пысмецо</div>
+              <div class ="contacts__link-four" ></div>
+              <div class="contacts__link-text">напысать пысмецо</div>
             </a>
             
           </div>
         </div>
-      </article>
       </div>
+    </section>
     
-  
     @@include('./../components/footer.html') 
   
   </body>

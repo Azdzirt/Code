@@ -4,7 +4,7 @@
 		  @include font-line(20,27);
 	}
 	@media (max-width: 1023px) and (min-width: 768px) {
-		width: 340px;
+		max-width:  340px;
 		@include font-line(18,25);
 	}
 	@media (max-width: 767px) and (min-width: 200px) {
@@ -22,18 +22,15 @@
 		background: url("./img/картинка.png");
 		max-height: 180px;
 		@media (max-width: 2500px) and (min-width: 1024px) {
-			width: 380px;
-			height: 180px;
+			@include width-height(380,180);
 		}
 	  
 	@media (max-width: 1023px) and (min-width: 768px) {
-		width: 340px;
-		height: 180px;
+		@include width-height(340,180);
 	}
 	  
 	@media (max-width: 767px) and (min-width: 200px) {
-		width: 280px;
-		height: 150px;
+		@include width-height(280,150);
 	} 
 }
 
@@ -52,20 +49,17 @@
 	
 	&__link	{
 		@media (max-width: 2500px) and (min-width: 1024px) {
-			width: 190px;
-			height: 44px;
+			@include width-height(190,44);
 			font-size: 24px;
 			margin-top: 47px;
 		} 
 		@media (max-width: 1023px) and (min-width: 768px) {
-			width: 170px;
-			height: 35px;
+			@include width-height(170,35);
 			font-size: 22px;
 			margin-top: 15px;
 	  	}
 	 	@media (max-width: 767px) and (min-width: 200px) {
-			width: 153px;
-			height: 30px; 
+			@include width-height(153,30);
 			font-size: 20px;
 			margin-top: 15px;
 	 	}

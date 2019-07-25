@@ -1,0 +1,12 @@
+		@media (max-width: 1400px) and (min-width: 1024px) {max-width:218px;}
+		@media (max-width: 1023px) and (min-width: 768px) {max-width:218px;}
+		@media (max-width: 767px) and (min-width: 320px) {max-width:87.64px;}
+    
+    @include font-line(20,27);
+    @include width-height(162,44);
+    @extend %flex;
+    @extend %button-yellow;
+
+
+
+    

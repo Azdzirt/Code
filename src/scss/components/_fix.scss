@@ -1,10 +1,12 @@
 .fixed{
- 
+  @media (max-width: 1024px) and (min-width: 320px) {
+    display: none;
+  }
+
   &__animation {
-  
     @extend %flex;
     position: fixed;
-    left: 91%;
+    
     bottom: 5.63%;
     right: 4.41%;
     background: hsl(0, 100%, 71%);

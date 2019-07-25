@@ -1,4 +1,4 @@
-.my-info{
+.more{
   	background: #F2F2F2;
     padding: 50px 0;
    
@@ -10,14 +10,17 @@
     }
 
     &__img {
-        padding-right:  20px ;
-    	width:300px;
-		height: 285px;
+		padding-right:  20px ;
+		@include width-height2(300,285);
+		
     }
     
     &_block {
-  	    display: flex;  
-     
+		display: flex;  
+		  
+		@media (max-width: 767px) and (min-width: 320px) {
+			flex-wrap: wrap;
+		}
     }
    
     &-two {    
@@ -28,11 +31,21 @@
     &__text {
 		font-weight: bold;
 		@include font-line(45,61);
-    	margin-bottom: 35px;
-    }
+		margin-bottom: 35px;
+		
+		@media (max-width: 1024px) and (min-width: 768px) {
+			@include font-line(21,28);
+		}
+	}
    
     &__text_info {
 		@include font-line(20,27);
+		@media (max-width: 1024px) and (min-width: 768px) {
+			@include font-line(16,20);
+		}
+		@media (max-width: 767px) and (min-width: 320px) {
+			@include font-line(13,17);
+		}
 	}
    
 	&__sprite{
@@ -40,7 +53,11 @@
   	 	display: flex;
     	align-items: center;
     	justify-content: flex-start;
-    	padding-bottom: 30px;
+		padding-bottom: 30px;
+		
+		@media (max-width: 1023px) and (min-width: 320px) {
+			display: none;
+		}
     }
    
 	&__sprite-one{
@@ -70,7 +87,8 @@
   	&__foto-block{
     	display: flex;
     	flex-wrap: wrap;
-    	margin: 0 - 10px;
+		margin: 0 - 10px;
+		
   	}
 	  
 	&__button{
@@ -78,5 +96,13 @@
     	justify-content: center; 
     	padding-top: 50px;
     	margin: 0 auto;
-    }
+	}
+	.more__image-block{
+		
+			@media (max-width: 1023px) and (min-width: 320px) {
+				@include width-height2(280,180);
+				margin-top: 50px;}
+		
+	
+	}
 }

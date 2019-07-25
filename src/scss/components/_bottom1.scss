@@ -2,12 +2,8 @@
  
   &__link {
     @extend %flex;
-    font-family: "BebasNeue";
-    background: #FFE01B;
-    color:black;
-    text-transform: uppercase;
-    transition: 500ms ease ;
-   
+    @extend %button-yellow;
+      
     @media (max-width: 2560px) and (min-width: 1024px) {
       width: 128px;
       height: 44px;
@@ -32,6 +28,62 @@
       text-decoration: none;
       color:black;
       transform: scale(1.1)
+    }
+    
+    &:active{
+      text-decoration: none;
+      color:black;
+      background: #FFEB6C;	
+    }		
+  }
+}
+
+.bottom2{
+  &__link {
+    @extend %flex;
+    @extend %button-yellow;
+   
+    @media (max-width: 2560px) and (min-width: 1024px) {
+      @include width-height(238,44);
+      @include font-line(24,24);
+    }
+     
+    @media (max-width: 1023px) and (min-width: 768px) {
+      @include font-line(22,22); 
+      @include width-height(213,35);
+    }
+     
+    @media (max-width: 767px) and (min-width: 200px) {
+      @include width-height(280,30);
+      @include font-line(20,20);
+    }
+    
+     &:hover{
+      text-decoration: none;
+      color:black;
+      transform: scale(1.1);
+    }
+    
+    &:active{
+      text-decoration: none;
+      color:black;
+      background: #FFEB6C;	
+    }		
+  }
+}
+
+
+.bottom3{
+  &__link {
+    @extend %flex;
+    @extend %button-yellow;
+    @include font-line(24,24);
+    @include width-height(162,44);
+    
+    &:hover{
+      text-decoration: none;
+      color:black;
+      transform: scale(1.1);
     }
     
     &:active{

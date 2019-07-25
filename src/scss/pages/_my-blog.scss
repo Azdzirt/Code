@@ -2,22 +2,32 @@
   background:  #F2F2F2;
   padding: 50px 0 70px 0;
  
-  &__tools {
+  &__content {
     flex-wrap: wrap;
     padding-bottom:40px;
     display: flex;
   }
   
-  &__news {
+  &__title {
     font-weight: bold;
     @include font-line(55,75);
     margin-bottom: 30px;
   }
  
-  &__img {
+  &__news {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -10px ;
+    display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    
+		@media (max-width: 1023px) and (min-width: 768px) {
+			grid-template-columns: 1fr 1fr;
+	}
+		@media (max-width: 767px) and (min-width: 320px) {
+      grid-template-columns: 1fr ;
+	}
+		
   }
  
   &__nav{
