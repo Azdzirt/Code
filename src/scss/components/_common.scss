@@ -86,11 +86,11 @@ body {
 	background: #F5FAFF;
 	color: #3A4959;
 	
-	@media (max-width: 1400px) and (min-width: 1024px) {
+	@media (min-width: 1024px) {
 		@include font-line(18,29);
 	}
 	
-	@media (max-width: 1023px) and (min-width: 320px) {
+	@media (max-width: 1023px) {
 		@include font-line(15,24.80);
 	}
 }
@@ -111,7 +111,7 @@ body {
 	background: #056CDE;
 	border-radius: 10px;
 	
-	@media (max-width: 1023px) and (min-width: 320px) {
+	@media (max-width: 1023px) {
 		width:80px;
 		height:3px;
 	}
@@ -143,11 +143,11 @@ body {
 h1{
 	font-family: 'Montserrat', sans-serif;
 	
-	@media (max-width: 1400px) and (min-width: 1024px) {
+	@media (min-width: 1024px) {
 		@include font-line(18,21);
 	}
 	
-	@media (max-width: 1023px) and (min-width: 320px) { 
+	@media (max-width: 1023px)  { 
 		@include font-line(14,17);
 	}
 }
@@ -157,7 +157,7 @@ p{
 		@include font-line(16,24);
 	}
 	
-	@media (max-width: 1023px) and (min-width: 320px) {
+	@media (max-width: 1023px)  {
 		@include font-line(14,21);
 	}
 	
@@ -168,7 +168,7 @@ p{
 	@include font-line(16,22);
 	margin-right: 12px;
 	
-	@media (max-width: 767px) and (min-width: 320px) { 
+	@media (max-width: 767px)  { 
 	margin-right: 10px;
 	}
 	
@@ -182,7 +182,7 @@ p{
 		background: url("./img/white.svg")no-repeat;
 		position: absolute;
 		
-		@media (max-width: 1400px) and (min-width: 1024px) {
+		@media (min-width: 1024px) {
 			@include width-height(590,1226);
 			top: 775px;
 		}
@@ -192,7 +192,7 @@ p{
 			top: 488px;
 		}
 		
-		@media (max-width: 767px) and (min-width: 320px) {
+		@media (max-width: 767px)  {
 			display: none;
 		}
 	}
@@ -201,7 +201,7 @@ p{
 		background: url("./img/uu.svg")no-repeat;
 		position: absolute;
 		
-		@media (max-width: 1400px) and (min-width: 1024px) {
+		@media (min-width: 1024px) {
 			@include width-height(593,1259);
 			top: 2082px;
 			right:0px;
@@ -213,7 +213,7 @@ p{
 			right:0px;
 		}
 		
-		@media (max-width: 767px) and (min-width: 320px) {
+		@media (max-width: 767px)  {
 			display: none;
 		}
 	}
@@ -222,7 +222,7 @@ p{
 		background: url("./img/white.svg")no-repeat;
 		position: absolute;
 		
-		@media (max-width: 1400px) and (min-width: 1024px) {
+		@media (min-width: 1024px) {
 			@include width-height(590,1226);
 			top: 3550px;
 		}
@@ -232,7 +232,7 @@ p{
 			top: 3000px;
 		}
 		
-		@media (max-width: 767px) and (min-width: 320px) {
+		@media (max-width: 767px)  {
 			display: none;
 		}
 	}

@@ -3,25 +3,25 @@
 	color: #FFFFFF;
 	margin: 0 auto;
 
-	@media (max-width: 2500px) and (min-width: 1024px) {
+	@media  (min-width: 1024px) {
 		padding: 50px 0 50px 0;}
 
 	@media (max-width: 1023px) and (min-width: 768px) {
 		padding: 30px 0 50px 0;}
 	 
-	 @media (max-width: 767px) and (min-width: 200px) {
+	 @media (max-width: 767px)  {
 		padding: 30px 0 40px 0;}
 	
 	
 	&__fixed{
-		@media (max-width: 1023px) and (min-width: 100px) {
+		@media (max-width: 1023px)  {
 			display: none;}
 	
 	}
 
 	&__title {
 		font-weight: bold;	  
-		@media (max-width: 2500px) and (min-width: 1024px) {
+		@media  (min-width: 1024px) {
 		@include font-line(55,75);
 		margin-bottom: 40px;
 	}	  
@@ -30,7 +30,7 @@
 		@include font-line(45,61);
 		margin-bottom: 30px;}
 	 
-	  @media (max-width: 767px) and (min-width: 100px) {
+	  @media (max-width: 767px)  {
 		@include font-line(30,41);
 		margin-bottom: 20px;}
 	}
@@ -38,7 +38,7 @@
 	&__content {
 		display: flex;
 		
-		@media (max-width: 767px) and (min-width: 100px) {
+		@media (max-width: 767px)  {
 			flex-direction: column;}
 		}
 
@@ -51,7 +51,7 @@
 		margin-left: 20px;
 		
    
-    @media (max-width: 767px) and (min-width: 200px) {
+    @media (max-width: 767px)  {
 		margin-left: 0;
 	}	
 		@media (max-width: 1023px) and (min-width: 768px) {
@@ -62,7 +62,7 @@
 	 
 	&__info {
 		
-		@media (max-width: 2500px) and (min-width: 1024px) {
+		@media  (min-width: 1024px) {
 			@include font-line(20,27);	
 			padding-bottom: 57px;
 		} 
@@ -73,7 +73,7 @@
 			
 		}
 		  
-		@media (max-width: 767px) and (min-width: 200px) {
+		@media (max-width: 767px)  {
 			padding: 25px 0;
 			margin:0;
 			@include font-line(16,22);
@@ -103,7 +103,7 @@
 		padding: 30px 0 0px 0;}
 	 
 	 	 
-	  @media (max-width: 767px) and (min-width: 200px) {
+	  @media (max-width: 767px)  {
 		padding: 30px 0 25px 0;}
 	
  	&__text {
@@ -117,7 +117,7 @@
 			margin-bottom: 30px;
 			@include font-line(45,61);}
 		 
-		  @media (max-width: 767px) and (min-width: 200px) {
+		  @media (max-width: 767px)  {
 			margin-bottom: 20px;
 			@include font-line(30,41);}
 	}
@@ -154,7 +154,7 @@
 		display: flex;
 
 		justify-content: center;
-		@media (max-width: 2500px) and (min-width: 768px) { 
+		@media  (min-width: 768px) { 
 			padding-bottom: 50px;}
 		
 		&:hover{
@@ -167,27 +167,27 @@
 	
 	background: #FFE01B;
 	
-	@media (max-width: 2500px) and (min-width: 1024px) {
+	@media  (min-width: 1024px) {
 		padding: 50px 0 50px 0;}
 	
 	@media (max-width: 1023px) and (min-width: 768px) {
 		padding: 30px 0 40px 0;}
 	 
-	@media (max-width: 767px) and (min-width: 200px) {
+	@media (max-width: 767px)  {
 		padding: 30px 0 20px 0;}
 
 	&__title {	
 		@extend %flex;
 		font-weight: bold;
 		
-		@media (max-width: 2500px) and (min-width: 1024px) {margin-bottom: 40px;
+		@media  (min-width: 1024px) {margin-bottom: 40px;
 			@include font-line(55,75);}
 			
 		@media (max-width: 1023px) and (min-width: 768px) {
 			@include font-line(45,61);
 			margin-bottom: 30px;}
 		 
-		@media (max-width: 767px) and (min-width: 200px) {
+		@media (max-width: 767px)  {
 			@include font-line(30,41);
 			margin-bottom: 20px;}
 	} 
@@ -204,10 +204,10 @@
 		@extend %flex;
 		@include width-height(280,171);
 
-		@media (max-width: 1023px) and (min-width: 100px) {
+		@media (max-width: 1023px)  {
 			height: 150px;}
 		
-		@media (max-width: 767px) and (min-width: 200px) {
+		@media (max-width: 767px)  {
 			margin-bottom: 15px;}
 		
 		background: #343434;

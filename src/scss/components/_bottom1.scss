@@ -4,7 +4,7 @@
     @extend %flex;
     @extend %button-yellow;
       
-    @media (max-width: 2560px) and (min-width: 1024px) {
+    @media   (min-width: 1024px) {
       width: 128px;
       height: 44px;
       @include font-line(24,24);
@@ -14,11 +14,8 @@
       height: 35px;
       @include font-line(22,22);
     }
-    @media (max-width: 1023px) and (min-width: 768px) {
-      width: 113px;
-      height: 35px;
-    }
-    @media (max-width: 767px) and (min-width: 200px) {
+   
+    @media (max-width: 767px)  {
       width: 280px;
       height: 30px;
       @include font-line(20,20);
@@ -43,7 +40,7 @@
     @extend %flex;
     @extend %button-yellow;
    
-    @media (max-width: 2560px) and (min-width: 1024px) {
+    @media (min-width: 1024px) {
       @include width-height(238,44);
       @include font-line(24,24);
     }
@@ -53,7 +50,7 @@
       @include width-height(213,35);
     }
      
-    @media (max-width: 767px) and (min-width: 200px) {
+    @media (max-width: 767px)  {
       @include width-height(280,30);
       @include font-line(20,20);
     }

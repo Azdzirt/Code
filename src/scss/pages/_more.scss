@@ -18,7 +18,7 @@
     &_block {
 		display: flex;  
 		  
-		@media (max-width: 767px) and (min-width: 320px) {
+		@media (max-width: 767px)  {
 			flex-wrap: wrap;
 		}
     }
@@ -43,7 +43,7 @@
 		@media (max-width: 1024px) and (min-width: 768px) {
 			@include font-line(16,20);
 		}
-		@media (max-width: 767px) and (min-width: 320px) {
+		@media (max-width: 767px)  {
 			@include font-line(13,17);
 		}
 	}
@@ -55,7 +55,7 @@
     	justify-content: flex-start;
 		padding-bottom: 30px;
 		
-		@media (max-width: 1023px) and (min-width: 320px) {
+		@media (max-width: 1023px)  {
 			display: none;
 		}
     }
@@ -99,7 +99,7 @@
 	}
 	.more__image-block{
 		
-			@media (max-width: 1023px) and (min-width: 320px) {
+			@media (max-width: 1023px)  {
 				@include width-height2(280,180);
 				margin-top: 50px;}
 		
